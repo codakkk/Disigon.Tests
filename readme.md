@@ -2,18 +2,6 @@
 
 First of all, to use DisigonSDK, add it as NuGet package from ---LINK---
 
-## Setup
-First of all, DigitalSigner must be initialized.
-Our initialization can be found on row #18.
-
-```csharp
-private void Form1_Load(object sender, EventArgs e)
-{
-  DigitalSigner.Licensee = "your_license_key";
-  DigitalSigner.ProductKey = "your_product_key";
-}
-```
-
 ## Signing
 To start signing, we have to create a DigitalSigner instance.
 In our sdk, we provide a PKCS#11 implementation (P11DigitalSigner).
